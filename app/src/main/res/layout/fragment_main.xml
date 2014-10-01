@@ -1,0 +1,179 @@
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:id="@+id/layoutGyro">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pitch"
+            android:id="@+id/pitchLabel"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yaw"
+            android:id="@+id/yawLabel"
+            android:layout_below="@+id/pitchLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pitchTextView"
+            android:layout_toEndOf="@+id/pitchLabel"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/pitchLabel"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yawTextView"
+            android:layout_below="@+id/pitchLabel"
+            android:layout_toRightOf="@+id/yawLabel"
+            android:layout_toEndOf="@+id/yawLabel"
+            android:layout_marginLeft="10dp" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Gyro Steering"
+            android:id="@+id/gyroSteeringSwitch"
+            android:checked="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="76dp">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Speech Recognition"
+            android:id="@+id/enableSpeechSteering"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checked="false"
+            android:enabled="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listen"
+            android:id="@+id/triggerRecognitionButton"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:enabled="false" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rmsBar"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:minWidth="250dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingTop="30dp"
+            android:max="20"
+            android:progress="0"
+            android:indeterminate="false" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="83dp"
+        android:id="@+id/swipeLayout">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Swipe Steering"
+            android:id="@+id/swipeSteeringSwitch"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:checked="false" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forward"
+            android:id="@+id/moveForwardButton"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/moveBackButton"
+            android:layout_below="@+id/moveForwardButton"
+            android:layout_alignLeft="@+id/lintillaStopButton"
+            android:layout_alignStart="@+id/lintillaStopButton"
+            android:layout_marginTop="50dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Right"
+            android:id="@+id/moveRightButton"
+            android:layout_toEndOf="@+id/moveBackButton"
+            android:layout_alignTop="@+id/moveBackButton"
+            android:layout_toRightOf="@+id/moveBackButton"
+            android:layout_marginLeft="50dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left"
+            android:id="@+id/moveLeftButton"
+            android:layout_toStartOf="@+id/moveBackButton"
+            android:layout_alignTop="@+id/moveBackButton"
+            android:layout_toLeftOf="@+id/moveBackButton"
+            android:layout_marginRight="50dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lintilla dance!"
+            android:id="@+id/danceButton"
+            android:layout_below="@+id/lintillaStopButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop"
+            android:id="@+id/lintillaStopButton"
+            android:layout_below="@+id/moveBackButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp" />
+    </RelativeLayout>
+</LinearLayout>
