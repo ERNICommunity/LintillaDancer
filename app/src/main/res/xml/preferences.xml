@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Lintilla's base url preference  -->
+    <EditTextPreference
+        android:key="pref_url"
+        android:title="Lintilla base URL"></EditTextPreference>
+
+    <!-- Lintilla_ID preference  -->
+    <EditTextPreference
+        android:key="pref_lintillaID"
+        android:title="Lintilla ID"></EditTextPreference>
+
+
+</PreferenceScreen>
