@@ -270,22 +270,22 @@ public class SpeechLintillaMover extends LintillaMover implements RecognitionLis
      */
     private void invokeMovement(String key) {
         if (key == "l") {
-            //moveLeft();
+            moveLeft();
             Log.d("Lintilla movement", "Left");
         } else if (key == "r") {
-            //moveRight();
+            moveRight();
             Log.d("Lintilla movement", "Right");
         } else if (key == "f") {
-            //moveForward();
+            moveForward();
             Log.d("Lintilla movement", "Forward");
         } else if (key == "b") {
-            //moveBackward();
+            moveBackward();
             Log.d("Lintilla movement", "Back");
         } else if (key == "s") {
-            //stop();
+            stop();
             Log.d("Lintilla movement", "Stop");
         } else if (key == "d") {
-            //dance();
+            dance();
             Log.d("Lintilla movement", "Left");
         }
     }

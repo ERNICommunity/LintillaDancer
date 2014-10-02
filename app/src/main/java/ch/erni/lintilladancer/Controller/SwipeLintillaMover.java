@@ -85,10 +85,10 @@ public class SwipeLintillaMover extends LintillaMover implements GestureDetector
          */
         if(velocityX > this.swipe_Min_Velocity && xDistance > this.swipe_Min_Distance && velocityX > velocityY){
             if(e1.getX() > e2.getX()) { // right to left
-                //moveLeft();
+                moveLeft();
                 Log.d("Lintilla movement", "Left");
             }else {
-                //moveRight();
+                moveRight();
                 Log.d("Lintilla movement", "Left");
             }
             //now, we do have a valid gesture
@@ -101,10 +101,10 @@ public class SwipeLintillaMover extends LintillaMover implements GestureDetector
          */
         else if(velocityY > this.swipe_Min_Velocity && yDistance > this.swipe_Min_Distance && velocityY > velocityX){
             if(e1.getY() > e2.getY()) { // bottom to up
-                //moveForward();
+                moveForward();
                 Log.d("Lintilla movement", "Forward");
             }else {
-                //moveBackward();
+                moveBackward();
                 Log.d("Lintilla movement", "Back");
             }
             //again, we have a valid gesture now
@@ -119,7 +119,7 @@ public class SwipeLintillaMover extends LintillaMover implements GestureDetector
      */
     @Override
     public void onLongPress(MotionEvent e) {
-        //stop();
+        stop();
         Log.d("Lintilla movement", "Stop");
     }
 

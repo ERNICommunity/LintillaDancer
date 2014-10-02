@@ -87,11 +87,11 @@ public class LintillaMover {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         this.url = prefs.getString("pref_url", null);
         this.lintillaNumber = prefs.getString("pref_lintillaID", null);
-/*        restAdapter = new RestAdapter.Builder()
+        restAdapter = new RestAdapter.Builder()
                 .setEndpoint(url)
                 .build();
 
-        service = restAdapter.create(LintillaMoverService.class);*/
+        service = restAdapter.create(LintillaMoverService.class);
     }
 
     /**

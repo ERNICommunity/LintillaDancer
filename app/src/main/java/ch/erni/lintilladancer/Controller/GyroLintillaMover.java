@@ -148,27 +148,27 @@ public class GyroLintillaMover extends LintillaMover implements SensorEventListe
                  */
                 //If conditions for left turn apply, send command to lintilla nd set moving=true
                 if ((yaw - initialYaw) < -20 && Math.abs(pitch - initialPitch) < 10 && !isMoving) {
-                    //moveLeft();
+                    moveLeft();
                     Log.d(LOG_TAG, "Left");
                     isMoving = true;
                     //If conditions for right turn apply, send command to lintilla nd set moving=true
                 } else if ((yaw - initialYaw) > 20 && Math.abs(pitch - initialPitch) < 10 && !isMoving) {
-                    //moveRight();
+                    moveRight();
                     Log.d(LOG_TAG, "Right");
                     isMoving = true;
                     //If conditions for forward movement apply, send command to lintilla nd set moving=true
                 } else if ((pitch - initialPitch) > 15 && Math.abs(yaw - initialYaw) < 5 && !isMoving) {
-                    // moveForward();
+                    moveForward();
                     Log.d(LOG_TAG, "Forward");
                     isMoving = true;
                     //If conditions for backward movement apply, send command to lintilla nd set moving=true
                 } else if ((pitch - initialPitch) < -15 && Math.abs(yaw - initialYaw) < 5 && !isMoving) {
-                    //moveBackward();
+                    moveBackward();
                     Log.d(LOG_TAG, "Backward");
                     isMoving = true;
                     //If conditions to stop lintilla apply, send command to lintilla nd set moving=true
                 } else if (Math.abs(pitch - initialPitch) < 10 && Math.abs(yaw - initialYaw) < 5 && isMoving) {
-                    //stop();
+                    stop();
                     Log.d(LOG_TAG, "Stop");
                     isMoving = false;
                 }
