@@ -251,7 +251,7 @@ public class MainFragment extends Fragment {
         moveForward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //basicLintillaMover.moveForward();
+                basicLintillaMover.moveForward();
             }
         });
 
@@ -261,7 +261,7 @@ public class MainFragment extends Fragment {
         moveBackward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //basicLintillaMover.moveBackward();
+                basicLintillaMover.moveBackward();
             }
         });
 
@@ -271,7 +271,7 @@ public class MainFragment extends Fragment {
         moveLeft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //basicLintillaMover.moveLeft();
+                basicLintillaMover.moveLeft();
             }
         });
 
@@ -281,7 +281,7 @@ public class MainFragment extends Fragment {
         moveRight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //basicLintillaMover.moveRight();
+                basicLintillaMover.moveRight();
             }
         });
 
@@ -291,7 +291,7 @@ public class MainFragment extends Fragment {
         dance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //basicLintillaMover.dance();
+                basicLintillaMover.dance();
             }
         });
 
@@ -301,7 +301,7 @@ public class MainFragment extends Fragment {
         stop.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //basicLintillaMover.stop();
+                basicLintillaMover.stop();
             }
         });
 
