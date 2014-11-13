@@ -24,3 +24,10 @@ Your benefits from working on this project:
 * Get familiar with the challanges of Android sensor information (Singularities, orientation switch, zero-crossings, interference,...)
 * Learn how to use Android speech recognition
 * Experiment with gestures in Android
+
+What you need to work on the project:
+
+* Be a little familiar with Android and Java
+* Have Android Studio running (we don't want to loose to much time setting up things)
+* Have an Android device at hand that can be used for debugging (Testing orientation sensors on an emulator isn't that much fun)
+
