@@ -10,7 +10,7 @@ It faciliats [Retrofit REST-API](http://square.github.io/retrofit/) to communica
 * Orientation sensors
 * Speech recognition
 
-There are severel possibilities to work on during the next hack-session:
+There are several possibilities to work on during the next hack-session:
 
 * Add additional Lintilla-commands to the API
 * Improve the control-paramaters for the gesture detection and orientation control
