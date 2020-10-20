@@ -1,6 +1,8 @@
 LintillaDancer
 ==============
 
+:warning: **REPOSITORY NOT ACTIVE SINCE 2014 Dependabot alerts disabled**
+
 This simple app is used to control a Lintilla via a [REST-Interface](https://github.com/ERNICommunity/lintilla-embedded/wiki/REST%20API).
 
 It faciliats [Retrofit REST-API](http://square.github.io/retrofit/) to communicate with Lintilla and offers four options to control the robot:
